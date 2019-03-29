@@ -1,0 +1,14 @@
+{
+    "extends": ["airbnb", "prettier"],
+    "globals": {
+        "before": true,
+        "spyOn": true,
+        "__PATH_PREFIX__": true
+    },
+    "rules": {
+        "no-use-before-define": "off",
+        "react/jsx-filename-extension": "off",
+        "react/prop-types": "off",
+        "react/jsx-one-expression-per-line": "off"
+    }
+}
