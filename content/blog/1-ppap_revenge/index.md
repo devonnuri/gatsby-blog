@@ -103,11 +103,6 @@ kr.kshgroup.ppap_revenge.ProgramManager -> kr.kshgroup.ppap_revenge.b:
 핵심적으로 wrapping하기 시작하는 부분은 `kr.kshgroup.ppap_revenge.files.ppap.PPAPGenerator`에 있다. run 함수의 로직을 대충 분석해보자.
 
 ```
-[준비]
-a. Author와 클래스의 개수를 PPAPMeta 인스턴스에 넣어 PPAPFile.meta에 저장한다.
-b. Main 소스코드를 가져와 PPAPClass 인스턴스에 넣어 PPAPFile.mainClass에 저장한다.
-c. 그 외의 다른 소스코드들도 가져와 PPAPClass 인스턴스에 넣어 PPAPFile.classes에 저장한다.
-
 [파일 구조]
 1. PPAP 파일 시그니처
 2. PPAPMeta
