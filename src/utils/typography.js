@@ -1,7 +1,7 @@
 import Typography from 'typography';
-import Wordpress2016 from 'typography-theme-wordpress-2016';
+import Irving from 'typography-theme-irving';
 
-Wordpress2016.overrideThemeStyles = () => {
+Irving.overrideThemeStyles = () => {
   return {
     'a.gatsby-resp-image-link': {
       boxShadow: `none`
@@ -9,9 +9,25 @@ Wordpress2016.overrideThemeStyles = () => {
   };
 };
 
-delete Wordpress2016.googleFonts;
+Irving.googleFonts = [
+  {
+    name: 'Major Mono Display',
+    styles: ['400']
+  },
+  {
+    name: 'Song Myung',
+    styles: ['400']
+  },
+  {
+    name: 'Noto Serif KR',
+    styles: ['400', '700']
+  }
+];
 
-const typography = new Typography(Wordpress2016);
+Irving.headerFontFamily = ['Song Myung', 'sans-serif'];
+Irving.bodyFontFamily = ['Noto Serif KR', 'georgia', 'sans-serif'];
+
+const typography = new Typography(Irving);
 
 // Hot reload typography in development.
 if (process.env.NODE_ENV !== `production`) {

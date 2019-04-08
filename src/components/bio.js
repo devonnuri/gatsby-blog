@@ -30,7 +30,7 @@ const Bio = () => (
             }}
           />
           <p>
-            Written by <b>devonnuri</b> who loves Javascript &amp; Hacking
+            Written by <b>{author}</b> who loves Javascript &amp; Hacking
           </p>
         </div>
       );
