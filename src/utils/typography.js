@@ -4,7 +4,12 @@ import Irving from 'typography-theme-irving';
 Irving.overrideThemeStyles = () => {
   return {
     'a.gatsby-resp-image-link': {
-      boxShadow: `none`
+      boxShadow: 'none'
+    },
+    'code:not([class*="language-"])': {
+      backgroundColor: '#eee',
+      padding: '3px',
+      lineHeight: 'normal'
     }
   };
 };
