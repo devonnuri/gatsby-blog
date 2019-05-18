@@ -161,6 +161,7 @@ c함수는 a, b, c를 인자로 받아서 XOR 연산을 하는것 같다.
 ```python
 import re
 import binascii
+import itertools
 
 a = [1093, 61, 61, 99, 40, 39, 162, 215, 38, 129, 202, 180, 99, 202, 175, 172, 36, 182, 179, 180, 125, 205, 200, 180, 84, 151, 169,
      208, 56, 205, 179, 205, 124, 212, 156, 247, 97, 200, 208, 221, 38, 155, 168, 254, 74, 39, 44, 104, 40, 1093, 41, 41, 47, 47, 6626][6:-10]
@@ -176,14 +177,10 @@ for i in range(4):
             temparr.append(j)
     whitelists.append(temparr)
 
-
-for i in whitelists[0]:
-    for j in whitelists[1]:
-        for k in whitelists[2]:
-            for l in whitelists[3]:
-                key = chr(i) + chr(j) + chr(k) + chr(l)
-                print('Key: ' + binascii.hexlify(key.encode()).decode())
-                print('Value: ' + ''.join([chr(value ^ ord(key[idx % 4])) for idx, value in enumerate(a)]))
+for i in itertools.product(*whitelists):
+    key = ''.join(map(chr, i))
+    print('Key: ' + binascii.hexlify(key.encode()).decode())
+    print('Value: ' + ''.join([chr(value ^ ord(key[idx % 4])) for idx, value in enumerate(a)]))
 ```
 
 실행시키면 다음과 같은 결과가 나온다.
