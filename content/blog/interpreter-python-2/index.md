@@ -234,3 +234,8 @@ EOF
 ```
 
 성공적이군요! 이제 다음에는 아까 말했듯이 AST라고 불리는 Parser를 짜서 Abstract Syntax Tree를 만들어볼거에요!
+
+# 4. 📚 참고 문서
+
+* [Let’s Build A Simple Interpreter. Part 13: Semantic Analysis.](https://ruslanspivak.com/lsbasi-part13/)
+* [Crafting Interpreters - Scanning](https://craftinginterpreters.com/scanning.html)
