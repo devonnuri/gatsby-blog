@@ -5,6 +5,8 @@ date: "2019-06-08T12:51:34Z"
 
 ![banner-image.png](python_interpreter_1.png)
 
+이 글은 [velog](https://velog.io/@devonnuri/%ED%8C%8C%EC%9D%B4%EC%8D%AC%EC%9C%BC%EB%A1%9C-%EC%9D%B8%ED%84%B0%ED%94%84%EB%A6%AC%ED%84%B0-%EB%A7%8C%EB%93%A4%EA%B8%B0-1-%EC%96%B8%EC%96%B4-%EB%AC%B8%EB%B2%95-%EC%A0%95%ED%95%98%EA%B8%B0-ibjwmybtpj)에도 기고되어 있습니다.
+
 > 저는 컴파일러론이나 오토마타 등을 공부한 적이 없는 학생입니다.. 이런 어려움과 삽질 과정이 있었다는 그런 모험기로 봐주시면 감사하겠습니다.
 
 어느날, 프로그래머라면 한번쯤은 꿈꿔봤던 (저만 그런가요 ㅎㅎ..) 저만의 언어를 만들기 위해 이번에야말로 무언가를 만들어야 겠다는 생각이 들었습니다.
