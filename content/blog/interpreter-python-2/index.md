@@ -10,6 +10,7 @@ date: "2019-06-09T07:04:47Z"
 문법도 어느정도 갖추어졌으니 인터프리터가 어떻게 구성되는지 알아봅시다.
 
 ![lsbasi_part13_img03.png](https://images.velog.io/post-images/devonnuri/9edc2060-89d0-11e9-b489-01d6493e8bd1/lsbasipart13img03.png)
+
 (이미지 출처: [Let’s Build A Simple Interpreter. Part 13: Semantic Analysis.](https://ruslanspivak.com/lsbasi-part13/)
 
 먼저 Lexer로 소스코드를 토큰 단위로 분석하고, Parser로 우선순위에 맞춰서 Abstract Syntax Tree를 만들어준 뒤, Semantic Analyzer로 Type checking 같은 의미 분석을 하고, 최종적으로 Interpreter가 연산해서 프로그램을 실행하는 것입니다.
