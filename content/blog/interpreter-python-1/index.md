@@ -3,7 +3,7 @@ title: 파이썬으로 인터프리터 만들기 | 1 - 언어 문법 정하기
 date: "2019-06-08T12:51:34Z"
 ---
 
-![banner-image.png](python_interpreter_1.png)
+![](python_interpreter_1.png)
 
 이 글은 [velog](https://velog.io/@devonnuri/%ED%8C%8C%EC%9D%B4%EC%8D%AC%EC%9C%BC%EB%A1%9C-%EC%9D%B8%ED%84%B0%ED%94%84%EB%A6%AC%ED%84%B0-%EB%A7%8C%EB%93%A4%EA%B8%B0-1-%EC%96%B8%EC%96%B4-%EB%AC%B8%EB%B2%95-%EC%A0%95%ED%95%98%EA%B8%B0-ibjwmybtpj)에도 기고되어 있습니다.
 
