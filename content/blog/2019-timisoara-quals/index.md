@@ -249,7 +249,7 @@ print(r.recv())
 FLAG: TIMCTF{Matrix_multiplication_OP_please_n3rf}
 ```
 
-# Reverse Engineerin
+# Reverse Engineering
 
 ## Easy Rev (75pts)
 
