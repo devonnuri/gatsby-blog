@@ -244,6 +244,11 @@ for i in range(10):
     r.sendline(result)
 print(r.recv())
 ```
+
+```
+FLAG: TIMCTF{Matrix_multiplication_OP_please_n3rf}
+```
+
 # Reverse Engineerin
 
 ## Easy Rev (75pts)
