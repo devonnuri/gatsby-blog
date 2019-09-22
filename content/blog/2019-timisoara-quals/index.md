@@ -512,7 +512,7 @@ int main() {
     };
 
     for (unsigned int i : flag) {
-        unsigned char ch = i / 236;
+        unsigned char ch = i / 237;
         ch = ~ch;
         ch ^= 0x7F;
         ch = ror(ch, 2);
