@@ -170,11 +170,11 @@ $$a_{n}=\sum_{k=1}^{m}a_{n-k}c_{k}$$
 
 And, when you calculate it with simple matrix product, it will take $O(n^3\log{}n)$, but if you use Kitamasa method it will take $O(n^2\log{}n)$.
 
-When you make an equation for a(2n), it looks like below.
+When you make an equation for $a_{2n}$, it looks like below.
 
 $$a_{2n}=\sum_{k=1}^{m}a_{n+k}d_{k}=\sum_{k=1}^{m}\sum_{j=1}^{m}a_{j+k}d_{j}d_{k}$$
 
-Convert equation a(n) to equation a(2n) which costs O(m^2) and we can calculate nth term of linear recurrence in O(m^2 log n).
+Convert equation $a_{n}$ to equation $a_{2n}$ which costs $O(m^2)$ and we can finally calculate nth term of linear recurrence in $O(m^2\log{}n)$.
 
 - References
     - [https://cubelover.tistory.com/?page=3](https://cubelover.tistory.com/?page=3)
