@@ -168,7 +168,7 @@ Kitamasa method(きたまさ法) is used to quickly calculate the nth term of li
 
 $$a_{n}=\sum_{k=1}^{m}a_{n-k}c_{k}$$
 
-And, when you calculate it with simple matrix product, it will take O(m^3 log n), but if you use Kitamasa method it will take O(m^2 log n).
+And, when you calculate it with simple matrix product, it will take $O(n^3\log{}n)$, but if you use Kitamasa method it will take $O(n^2\log{}n)$.
 
 When you make an equation for a(2n), it looks like below.
 
