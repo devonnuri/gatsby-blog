@@ -434,8 +434,8 @@ If you can analyze the logic of the disassembled code, it isn't hard to get inve
 
 Encryption is processed with these steps.
 
-1. Get 3*8 bits(3 bytes) from input
-2. Split into 4 blocks with getting rid of upper 2 bits (3*8 bits ⇒ 4*6 bits)
+1. Get 3\*8 bits(3 bytes) from input
+2. Split into 4 blocks with getting rid of upper 2 bits (3\*8 bits ⇒ 4\*6 bits)
 3. Process base64 with the each 4 blocks
 
 And, we can get flag in reverse order.
