@@ -440,15 +440,17 @@ Encryption is processed with these steps.
 
 And, we can get flag in reverse order.
 
-    base64 = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789+/'
-    flag = 'jveimeqpofewqY3chceAr+G6tPqKiM27u/CLhcbX7MPv'
-    
-    result = ''
-    for block in [flag[i:i+4] for i in range(0, len(flag), 4)]:
-        joined = int(''.join([bin(base64.index(c))[2:].rjust(6, '0') for c in block]), 2) ^ 0xDABEEF
-        joined = bin(joined)[2:].rjust(24, '0')
-        result += ''.join([chr(int(joined[i:i+8], 2)) for i in range(0, len(joined), 8)])
-    print result
+```python
+base64 = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789+/'
+flag = 'jveimeqpofewqY3chceAr+G6tPqKiM27u/CLhcbX7MPv'
+
+result = ''
+for block in [flag[i:i+4] for i in range(0, len(flag), 4)]:
+    joined = int(''.join([bin(base64.index(c))[2:].rjust(6, '0') for c in block]), 2) ^ 0xDABEEF
+    joined = bin(joined)[2:].rjust(24, '0')
+    result += ''.join([chr(int(joined[i:i+8], 2)) for i in range(0, len(joined), 8)])
+print result
+```
 
 ![](Untitled-5a24d503-beeb-4451-9d1b-1eb486af9709.png)
 
