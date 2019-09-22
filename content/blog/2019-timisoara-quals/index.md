@@ -7,8 +7,6 @@ date: "2019-09-22T04:38:48.071Z"
 
 I played Timisoara CTF. I think well-played. Let's go.
 
-티미쇼아라 CTF에서 놀았습니다. 라업을 영어로 내라길래 수정하기 귀찮아서 이렇게 냅니다.
-
 # Challenge List
 
 - Crypto
